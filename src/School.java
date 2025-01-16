@@ -10,7 +10,7 @@ class School {
     }
     @Override
     public String toString() {
-        StingBuilder result= new StringBuilder();
+        StringBuilder result= new StringBuilder();
         for (Person member : members) {
             result.append(member.toString()).append("\n");
         }

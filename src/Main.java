@@ -23,10 +23,10 @@ public class Main {
         student4.addGrade(67);
         student4.addGrade(79);
 
-        Teacheer teacher1=new Teacher("Severus", "Snape", 51, true, "math", 7, 800000);
-        Teacheer teacher2=new Teacher("Albus", "Dambledore", 71, true,"philosophy", 25, 1500000);
-        Teacheer teacher3=new Teacher("Minerva", "McGonagall", 62, false, "Sociology", 17, 1100000);
-        Teacheer teacher4=new Teacher("Sirius", "Black", 49, true, "physics", 9, 750000);
+        Teacher teacher1=new Teacher("Severus", "Snape", 51, true, "math", 7, 800000);
+        Teacher teacher2=new Teacher("Albus", "Dambledore", 71, true,"philosophy", 25, 1500000);
+        Teacher teacher3=new Teacher("Minerva", "McGonagall", 62, false, "Sociology", 17, 1100000);
+        Teacher teacher4=new Teacher("Sirius", "Black", 49, true, "physics", 9, 750000);
 
 
         System.out.println("Student1 GPA: " + student1.gpa());
@@ -36,9 +36,8 @@ public class Main {
 
         // Create School and add members
         School school = new School();
-        school.addMember(student1);
-        school.addMember(teacher1);
-
+        school.addMembers(student1);
+        school.addMembers(student2);
         // Print all members
         System.out.println("\nSchool Members:");
         System.out.println(school);
